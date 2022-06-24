@@ -51,7 +51,7 @@ resource "aws_instance" "web001" {
   tags = {
     Name = "Web-${count.index + 1}"
     type = "webserver"
-    App = portfolio_webserver
+    App = "portfolio_webserver"
   }
 }
 
